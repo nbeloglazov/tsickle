@@ -507,7 +507,7 @@ export function decoratorDownlevelTransformer(
       }
       const decorators = classDecl.decorators || [];
 
-      const decoratorsToLower = [];
+      const decoratorsToLower: ts.ObjectLiteralExpression[] = [];
       const decoratorsToKeep: ts.Decorator[] = [];
       for (const decorator of decorators) {
         if (shouldLower(decorator, typeChecker)) {
@@ -551,7 +551,7 @@ export function decoratorDownlevelTransformer(
           const impDecl = node as ts.ImportDeclaration;
           if (impDecl.importClause) {
             const importClause = impDecl.importClause;
-            const names = [];
+            const names: ts.Identifier[] = [];
             if (importClause.name) {
               names.push(importClause.name);
             }
