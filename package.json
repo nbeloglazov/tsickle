@@ -11,7 +11,7 @@
     "src/*"
   ],
   "peerDependencies": {
-    "typescript": "~3.5.3"
+    "typescript": "mprobst/TypeScript#96c94d1a61cd26b2649c8cbdd0782426c32b2c27"
   },
   "devDependencies": {
     "@bazel/bazel": "^0.29.0",
@@ -30,7 +30,7 @@
     "source-map": "^0.7.3",
     "source-map-support": "^0.5.6",
     "tslint": "5.11.0",
-    "typescript": "~3.5.3"
+    "typescript": "mprobst/TypeScript#96c94d1a61cd26b2649c8cbdd0782426c32b2c27"
   },
   "scripts": {
     "build": "bazel build //:npm_package",

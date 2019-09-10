@@ -1203,10 +1203,9 @@ tsutils@^2.27.2:
   dependencies:
     tslib "^1.8.1"
 
-typescript@~3.5.3:
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
-  integrity sha512-ACzBtm/PhXBDId6a6sDJfroT2pOWt/oOnk4/dElG5G33ZL776N3Y6/6bKZJBFpd+b05F3Ct9qDjMeJmRWtE2/g==
+typescript@mprobst/TypeScript#96c94d1a61cd26b2649c8cbdd0782426c32b2c27:
+  version "3.6.2"
+  resolved "https://codeload.github.com/mprobst/TypeScript/tar.gz/96c94d1a61cd26b2649c8cbdd0782426c32b2c27"
 
 uglify-js@^3.1.4:
   version "3.6.0"
