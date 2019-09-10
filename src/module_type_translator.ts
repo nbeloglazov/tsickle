@@ -379,7 +379,7 @@ export class ModuleTypeTranslator {
     const thisTags: jsdoc.Tag[] = [];
     const typeParameterNames = new Set<string>();
 
-    const argCounts = [];
+    const argCounts: number[] = [];
     let thisReturnType: ts.Type|null = null;
     for (const fnDecl of fnDecls) {
       // Construct the JSDoc comment by reading the existing JSDoc, if

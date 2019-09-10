@@ -590,7 +590,7 @@ export function jsdocTransformer(
           // Overloads are union-ized into the shared type in FunctionType.
           return ts.visitEachChild(fnDecl, visitor, context);
         }
-        const extraTags = [];
+        const extraTags: jsdoc.Tag[] = [];
         if (hasExportingDecorator(fnDecl, typeChecker)) extraTags.push({tagName: 'export'});
 
         const {tags, thisReturnType} =
