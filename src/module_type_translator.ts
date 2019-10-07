@@ -451,11 +451,8 @@ export class ModuleTypeTranslator {
           }
           if (type.flags & ts.TypeFlags.Object &&
               (type as ts.ObjectType).objectFlags & ts.ObjectFlags.Reference) {
-            const typeRef = type as ts.TypeReference;
-            if (!typeRef.typeArguments) {
-              throw new Error('rest parameter does not resolve to a reference type');
-            }
-            type = typeRef.typeArguments![0];
+            const typeArgs = typeChecker.getTypeArguments(type as ts.TypeReference);
+            type = typeArgs[0];
           }
         }
         newTag.type = this.typeToClosure(fnDecl, type);

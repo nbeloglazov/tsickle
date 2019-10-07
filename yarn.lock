@@ -1203,9 +1203,10 @@ tsutils@^2.27.2:
   dependencies:
     tslib "^1.8.1"
 
-typescript@mprobst/TypeScript#96c94d1a61cd26b2649c8cbdd0782426c32b2c27:
-  version "3.6.2"
-  resolved "https://codeload.github.com/mprobst/TypeScript/tar.gz/96c94d1a61cd26b2649c8cbdd0782426c32b2c27"
+typescript@3.7.0-beta:
+  version "3.7.0-beta"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.0-beta.tgz#4ad556e0eee14b90ecc39261001690e16e5eeba9"
+  integrity sha512-4jyCX+IQamrPJxgkABPq9xf+hUN+GWHVxoj+oey1TadCPa4snQl1RKwUba+1dyzYCamwlCxKvZQ3TjyWLhMGBA==
 
 uglify-js@^3.1.4:
   version "3.6.0"
