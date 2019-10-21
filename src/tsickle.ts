@@ -340,9 +340,8 @@ function addClutzAliases(
       localName = declaration.propertyName.text;
     }
     globalSymbols +=
-        `\t\texport {${localName} as module$contents$${clutzModuleName}_${symbol.name}}\n`;
-    nestedSymbols +=
-        `\t\texport {module$contents$${clutzModuleName}_${symbol.name} as ${symbol.name}}\n`;
+        `\t\texport {${localName} as module$contents$${clutzModuleName}_${symbol.name}};\n`;
+    nestedSymbols += `\t\texport {${localName}};\n`;
   }
 
   dtsFileContent += 'declare global {\n';
